@@ -12,11 +12,11 @@ var lyr = L.tileLayer('./{z}/{x}/{y}.png', {tms: true, opacity: 1, attribution: 
 
 // Map
 var map = L.map('map', {
-    center: [51.758742540379416, 14.331902259468553],
+    	center: [51.758742540379416, 14.331902259468553],
 	zoom: 12,
-    minZoom: 12,
-    maxZoom: 16,
-    layers: lyr,
+    	minZoom: 12,
+    	maxZoom: 16,
+    	layers: lyr,
 	loadingControl: true
 });
 
@@ -26,13 +26,15 @@ var overlaymaps = {"Schwarzplan": lyr}
 // Title
 var title = L.control();
 title.onAdd = function(map) {
-    this._div = L.DomUtil.create('div', 'ctl title');
-    this.update();
-    return this._div;
+	this._div = L.DomUtil.create('div', 'ctl title');
+    	this.update();
+    	return this._div;
 };
+
 title.update = function(props) {
     this._div.innerHTML = "Schwarzplan Map Cottbus";
 };
+
 title.addTo(map);
 
 // Add base layers
@@ -44,10 +46,10 @@ map.fitBounds([[51.73538626510637, 14.358582223434118], [51.78209881565247, 14.3
 // LOCATING
 		
 function onLocationFound(e) {
-    // var radius = e.accuracy / 2; /*Radius um den Marker*/
-    var location = e.latlng
-    L.marker(location).addTo(map).bindPopup("Du bist ungef&auml;hr hier.").openPopup();
-    // L.circle(location, radius).addTo(map); /*Kreis zeigen*/
+    	// var radius = e.accuracy / 2; /*Radius um den Marker*/
+   	var location = e.latlng
+    	L.marker(location).addTo(map).bindPopup("Du bist ungef&auml;hr hier.").openPopup();
+    	// L.circle(location, radius).addTo(map); /*Kreis zeigen*/
 };
 
 function onLocationError(e) {
@@ -57,7 +59,7 @@ function onLocationError(e) {
 function getLocationLeaflet() {
 	map.on('locationfound', onLocationFound);
 	map.on('locationerror', onLocationError);
-	map.locate({setView: true, watch: true, maxZoom: 16});
+	map.locate({setView: true, maxZoom: 16});
 };
 		
 // GPX-Track
