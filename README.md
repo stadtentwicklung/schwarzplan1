@@ -8,4 +8,4 @@
 
 ### :rocket: Kurzinfo
 
-Ein Schwarzplan zeigt das Muster der Gebäuden eines Ortes. Formen, Funktionen, Proportionen, Konzentrationen u.a. lässt sich daraus ableiten. Allerdings ist der Eindruck vor Ort of ein anderer. Höhen lassen sich z.B. nicht ableiten.
+Ein Schwarzplan zeigt das Formenmuster der Gebäuden eines Ortes. Funktionen, Proportionen, Konzentrationen u.ä. lässt sich daraus ableiten. Allerdings ist der Eindruck vor Ort oft ein anderer. Höhen lassen sich z.B. nicht ableiten. Diese Dimension bleibt unberücksichtigt. Vor Ort ist die Identifilation einer städtebaulichen Struktur mit Schwarzplan erst möglich. Dieses Repository enthält eine Schwarzplan-Webmap für unterwegs. Die Standortermittlung dient der Orientierung. Das Beispliel enthält außerdem eine Route, die mit [OSM-Routing](https://routing.openstreetmap.de/?z=13&center=51.761094%2C14.363766&hl=en&alt=0&srv=1).   
